@@ -1,0 +1,19 @@
+{{#if comments}}
+<div class="card mt-2">
+    <div class="card-header bg-dark text-white">
+        <h5><i class="fas fa-comments"></i> Últimos comentarios</h5>
+    </div>
+    <div class="card-body">
+        <ul>
+        {{#each comments}}
+            <div class="col text-dark">
+               
+                   <li>{{name}}: {{comment}}  {{timeago timeStamp}}</li>
+              
+            </div>
+
+        {{/each}}
+         </ul>>
+    </div>
+</div>
+{{/if}}

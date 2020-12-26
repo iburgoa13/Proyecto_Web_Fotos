@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Proyecto de Imagenes</title>
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+       <link rel="stylesheet" href="/public/css/styles.css">
+       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/
+       
+    </head>
+    <body>
+        <nav class = "navbar-dark bg-dark">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                <img src="/public/img/imgshare-logo.png" alt="imagen">
+                </a>
+            </div>
+        </nav>
+        <div class="container p-4">
+           <div class="row">
+               <div class="col-md-8">
+                   {{{body}}}
+               </div>
+               <div class="col-md-4">
+                   {{> stats }}
+                   {{> popular}}
+                   {{> comments}}
+               </div>
+           </div>
+        </div>
+        
+        <!--scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="crossorigin="anonymous"></script>
+        <script src="/public/js/scripts.js"></script>
+    </body>
+</html>
